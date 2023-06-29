@@ -301,6 +301,8 @@ fi
 python3 ungoogled-chromium/utils/domain_substitution.py apply -r ungoogled-chromium/domain_regex.list -f ${substitution_list_2} -c ${cache_file} src
 
 
+read -p "Replace Files Before Build, Press any key to continue once done!"
+
 ## Configure output folder
 export PATH=$OLD_PATH  # remove depot_tools from PATH
 pushd src
